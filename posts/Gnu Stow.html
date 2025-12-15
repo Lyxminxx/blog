@@ -9,12 +9,12 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <nav>
+   <nav>
     <div class="nav-left">
-        <label>&lt;/lyx&gt;</label>
-        <a href="https://lyxminx.xyz">Home</a>
-        <a href="https://blog.lyxminx.xyz">Blog</a>
-        <a href="https://lyxminx.xyz/projects.html">Projects</a>
+        <label>&lt;/maddie&gt;</label>
+        <a href="https://maddiemightcry.space">Home</a>
+        <a href="https://blog.maddiemightcry.space">Blog</a>
+        <a href="https://maddiemightcry.space/projects.html">Projects</a>
     </div>
     <div class="nav-right">
         <a href="https://github.com/Lyxminxx" class="socials">Github</a>
@@ -31,64 +31,64 @@
 <p>GNU stow is a symlink farmmanager <a href="https://www.gnu.org/software/stow/">gnu.org</a>. In simpler terms this means it is an easy way of setting up symlinks. This makes it possible to have one folder with all your dotfiles, and with one command you can link them all to the right places on your system.</p>
 <h2><strong>Setting up stow</strong></h2>
 <p>The setup process was simple enough, I made a folder with the name .config and added all files that go into .config on my system into it. Which looks something like this:</p>
-<pre class="codehilite"><code>dotfiles/.config/
+<div class="codehilite"><pre><span></span><code><span class="n">dotfiles</span><span class="o">/.</span><span class="n">config</span><span class="o">/</span>
 
-├── alacritty/
-│   ├── alacritty.toml
-│   └── dracula.toml
-├── fastfetch/
-│   └── config.jsonc
-├── fish/
-│   ├── completions/
-│   ├── conf.d/
-│   ├── config.fish
-│   ├── fish_variables
-│   └── functions/
-│       └── fish_prompt.fish
-├── gtk-3.0/
-│   ├── bookmarks
-│   └── settings.ini
-├── gtk-4.0/
-│   └── settings.ini
-├── mako/
-│   └── config
-├── rofi/
-│   ├── config.rasi
-│   ├── rofi-exit.sh
-│   ├── rofi-wifi-menu.sh
-│   ├── scriptLauncher.sh
-│   └── scripts/
-│       ├── calculator.sh
-│       ├── currency.sh
-│       ├── hardware.sh
-│       └── measure.sh
-├── sway/
-│   ├── autostart
-│   ├── binds
-│   ├── config
-│   ├── scripts/
-│   │   ├── display-autoset.sh
-│   │   ├── display-menu.sh
-│   │   └── songnotify.sh
-│   ├── theme
-│   └── windowRules
-├── swaylock/
-│   ├── config
-│   └── dracula-wallpaper.svg
-└── waybar/
-    ├── config
-    ├── scripts/
-    │   ├── .env
-    │   ├── .env-example
-    │   ├── batteryNotify.sh
-    │   ├── brightness.sh
-    │   ├── notify-toggle.sh
-    │   ├── open_weather.sh
-    │   ├── swayidle_status.sh
-    │   ├── swayidle_toggle.sh
-    │   └── weather.py
-    └── style.css
-</code></pre>
+<span class="err">├──</span><span class="w"> </span><span class="n">alacritty</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">alacritty</span><span class="o">.</span><span class="n">toml</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">dracula</span><span class="o">.</span><span class="n">toml</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">fastfetch</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">jsonc</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">fish</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">completions</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">fish</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">fish_variables</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">functions</span><span class="o">/</span>
+<span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="n">fish_prompt</span><span class="o">.</span><span class="n">fish</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">gtk</span><span class="o">-</span><span class="mf">3.0</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">bookmarks</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">settings</span><span class="o">.</span><span class="n">ini</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">gtk</span><span class="o">-</span><span class="mf">4.0</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">settings</span><span class="o">.</span><span class="n">ini</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">mako</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">config</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">rofi</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">rasi</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">rofi</span><span class="o">-</span><span class="n">exit</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">rofi</span><span class="o">-</span><span class="n">wifi</span><span class="o">-</span><span class="n">menu</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">scriptLauncher</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">scripts</span><span class="o">/</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">calculator</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">currency</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">hardware</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="n">measure</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">sway</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">autostart</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">binds</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">config</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">scripts</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">display</span><span class="o">-</span><span class="n">autoset</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">display</span><span class="o">-</span><span class="n">menu</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">songnotify</span><span class="o">.</span><span class="n">sh</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">theme</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">windowRules</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">swaylock</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">config</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">dracula</span><span class="o">-</span><span class="n">wallpaper</span><span class="o">.</span><span class="n">svg</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">waybar</span><span class="o">/</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">config</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">scripts</span><span class="o">/</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">.</span><span class="n">env</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">.</span><span class="n">env</span><span class="o">-</span><span class="n">example</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">batteryNotify</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">brightness</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">notify</span><span class="o">-</span><span class="n">toggle</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">open_weather</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">swayidle_status</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">swayidle_toggle</span><span class="o">.</span><span class="n">sh</span>
+<span class="w">    </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">weather</span><span class="o">.</span><span class="n">py</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">style</span><span class="o">.</span><span class="n">css</span>
+</code></pre></div>
 
 <p>So my dotfiles are now all in a .config folder just not in my home directory. I can now run <code>stow .</code> in the dotfiles directory and all the files get placed in the correct places.</p>
 <h2><strong>Setting up a repo</strong></h2>
